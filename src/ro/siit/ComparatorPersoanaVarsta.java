@@ -2,7 +2,7 @@ package ro.siit;
 
 import java.util.Comparator;
 
-public class ComparatorPersoana implements Comparator<Persoana> {
+public class ComparatorPersoanaVarsta implements Comparator<Persoana> {
     @Override
     public int compare(Persoana p1, Persoana p2) {
         if (p1.getVarsta() < p2.getVarsta()) {

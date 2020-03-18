@@ -11,7 +11,7 @@ public class Main {
 	    Persoana p3=new Persoana("Maria", 16);
         Persoana p4=new Persoana("Lori", 26);
 
-        Set<Persoana> persoane =new TreeSet<>(new ComparatorPersoanaNume().thenComparing(new ComparatorPersoana()));
+        Set<Persoana> persoane =new TreeSet<>(new ComparatorPersoanaNume().thenComparing(new ComparatorPersoanaVarsta()));
         persoane.add(p1);
         persoane.add(p2);
         persoane.add(p3);
@@ -65,12 +65,13 @@ public class Main {
         listaHobby3.add(h3);
 
         System.out.println(listaHobby2);  //lista cu hobby-urile pe care le are initial p2, dar care este prima in lista de peroane din cauza ordonarii pe care am implementat-o
-        // in hashMap o sa apara cealalta lista cu hobby-uri pentru ca se verifica daca exista persona p2 si daca exista, i se adauga chei respective o noua valoare
+        // in hashMap o sa apara cealalta lista cu hobby-uri pentru ca se verifica daca exista persona p2 si daca exista, i se adauga chei respective o noua valoare(listaHabby3)
         System.out.println("............................................................................................................");
         Map<Persoana, List<Hobby>> hm = new HashMap<Persoana, List<Hobby>>();
         hm.put(p1,listaHobby1);
         hm.put(p2,listaHobby2);
         hm.put(p3,listaHobby3);
+        hm.put(p4,listaHobby1);
         hm.put(p2,listaHobby3);
 
         for(Persoana p : persoane){
