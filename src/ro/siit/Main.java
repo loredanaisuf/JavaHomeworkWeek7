@@ -9,18 +9,20 @@ public class Main {
 	    Persoana p1=new Persoana("Lori", 22);
 	    Persoana p2=new Persoana("Alin", 26);
 	    Persoana p3=new Persoana("Maria", 16);
+        Persoana p4=new Persoana("Lori", 26);
 
-        Set<Persoana> persoane =new TreeSet<>(new ComparatorPersoana());
+        Set<Persoana> persoane =new TreeSet<>(new ComparatorPersoanaNume().thenComparing(new ComparatorPersoana()));
         persoane.add(p1);
         persoane.add(p2);
         persoane.add(p3);
+        persoane.add(p4);
         for(Persoana p:persoane){
             System.out.println(p);
         }
 
         System.out.println(p1.equals(p2));
-        Persoana p4=new Persoana("Lori", 22);
-        System.out.println(p1.equals(p4));
+        Persoana p5=new Persoana("Lori", 22);
+        System.out.println(p1.equals(p5));
 
         Adresa a1 = new Adresa("Stelelor", 7, "Timisoara");
         Adresa a2 = new Adresa ("14Octombire", 10, "Targu-Jiu");
