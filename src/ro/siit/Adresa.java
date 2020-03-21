@@ -4,11 +4,13 @@ public class Adresa {
     private String strada;
     private int nr;
     private String localitate;
+    private String tara;
 
-    public Adresa(String strada, int nr, String localitate) {
+    public Adresa(String strada, int nr, String localitate, String tara) {
         this.strada = strada;
         this.nr = nr;
         this.localitate = localitate;
+        this.tara = tara;
     }
 
     @Override
@@ -17,6 +19,7 @@ public class Adresa {
                 "strada='" + strada + '\'' +
                 ", nr=" + nr +
                 ", localitate='" + localitate + '\'' +
-                '}' + "\n" + "                                                                    ";
+                ", tara='" + tara + '\'' +
+                '}' + "\n" + "                                                                            ";
     }
 }

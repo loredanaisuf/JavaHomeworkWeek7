@@ -24,10 +24,10 @@ public class Main {
         Persoana p5=new Persoana("Lori", 22);
         System.out.println(p1.equals(p5));
 
-        Adresa a1 = new Adresa("Stelelor", 7, "Timisoara");
-        Adresa a2 = new Adresa ("14Octombire", 10, "Targu-Jiu");
-        Adresa a3 = new Adresa("Ion Vidu", 20, "Bucuresti");
-        Adresa a4 = new Adresa("Dimitrie Cantemir", 5, "Cluj");
+        Adresa a1 = new Adresa("Stelelor", 7, "Timisoara", "Romania");
+        Adresa a2 = new Adresa ("14Octombire", 10, "Targu-Jiu", "Romania");
+        Adresa a3 = new Adresa("Ion Vidu", 20, "Bucuresti", "Romania");
+        Adresa a4 = new Adresa("Dimitrie Cantemir", 5, "Viena", "Austria");
 
         List<Adresa> listaAdrese1 = new ArrayList<>();
         listaAdrese1.add(a1);
@@ -35,7 +35,6 @@ public class Main {
         listaAdrese1.add(a3);
 
         List<Adresa> listaAdrese2 = new ArrayList<>();
-        listaAdrese2.add(a1);
         listaAdrese2.add(a2);
         listaAdrese2.add(a4);
 
