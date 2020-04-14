@@ -6,7 +6,8 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-	    Persoana p1=new Persoana("Lori", 22);
+
+        Persoana p1=new Persoana("Lori", 22);
 	    Persoana p2=new Persoana("Alin", 26);
 	    Persoana p3=new Persoana("Maria", 16);
         Persoana p4=new Persoana("Lori", 26);
